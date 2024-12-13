@@ -1,0 +1,4 @@
+account: lake sandbox 566677523745
+vpc id: vpc-041434554d7a0222e
+subnet id: subnet-01a8928c21d18ba8a
+role id: okta-test-python-role-9kbqg9dz
