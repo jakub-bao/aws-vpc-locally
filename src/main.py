@@ -1,7 +1,10 @@
 import requests
 
-url = 'https://checkip.amazonaws.com'
+url = 'http://52.202.38.206'
 
 def main(event, context):
-    resp = requests.get(url)
-    return f'status: {resp.status_code}, response: {resp.text}'
+    try:
+        resp = requests.get(url, timeout=5)
+        return f'status: {resp.status_code}, response: {resp.text}'
+    except Exception as e:
+        print(e)
